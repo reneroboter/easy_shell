@@ -15,19 +15,12 @@ class Application
     protected $applicationStatus = false;
 
     /**
-     * Application constructor.
-     */
-    public function __construct()
-    {
-        $this->loop();
-    }
-
-    /**
      * start
      */
     public function start()
     {
         $this->applicationStatus = true;
+        $this->loop();
     }
 
     /**
@@ -46,6 +39,7 @@ class Application
         $shell = new Shell();
         while (true) {
             $shell->run();
+
             if (!$this->applicationStatus) {
                 break;
             }
