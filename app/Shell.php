@@ -15,7 +15,7 @@ class Shell
      */
     public function run()
     {
-        $this->execute($this->prompt());
+        echo $this->execute($this->prompt());
     }
 
     /**
