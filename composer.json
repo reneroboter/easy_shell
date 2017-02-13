@@ -1,0 +1,17 @@
+{
+  "name": "roboter/shell",
+  "description": "Simple shell written in php",
+  "type": "project",
+  "authors": [
+    {
+      "name": "René Backhaus",
+      "email": "rene.backhaus@hdnet.de"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "RenéRoboter\\Shell\\": "app/"
+    }
+  }
+} 
