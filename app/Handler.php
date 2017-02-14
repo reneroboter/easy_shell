@@ -23,7 +23,7 @@ class Handler
     public function handle($command)
     {
         if($this->hasBuiltInCommands($command)) {
-            return $this->executeBuiltIn($command);
+            $this->executeBuiltIn($command);
         }
         return shell_exec($command);
     }
@@ -45,6 +45,7 @@ class Handler
 
     /**
      * executeBuiltIn
+     * @param $command
      */
     public function executeBuiltIn($command)
     {
